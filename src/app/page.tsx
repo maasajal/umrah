@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)]">
@@ -12,6 +10,10 @@ export default function Home() {
           Arabia. Embark on a life-changing journey to the holy cities of Makkah
           and Madinah. Join our exclusive 7-days Umrah package and experience
           the peace, blessings, and spirituality of Umrah with Comfort and ease.
+        </p>
+        <hr className="my-10" />
+        <p className="text-center max-w-xl mx-auto leading-8">
+          Umrah Details are coming soon........
         </p>
       </main>
     </div>
