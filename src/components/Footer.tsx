@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <div className="border-t-4 border-[#003479]">
-        <footer className="footer p-10 sm:px-20 row-start-3 flex gap-6 flex-wrap items-center justify-center">
+        <footer className="container footer py-10 sm:px-20 row-start-3 flex gap-6 flex-wrap items-center justify-center">
           <aside className="max-w-xs">
             <a className="btn btn-ghost h-full w-40">
               <Image
