@@ -1,14 +1,17 @@
 "use client";
 import { useState } from "react";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import {
+  Menu,
+  Toolbar,
+  Box,
+  Button,
+  Typography,
+  IconButton,
+} from "@mui/material";
+// MUI Icons
+import MenuIcon from "@mui/icons-material/Menu";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const navItems = [
@@ -39,14 +42,18 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 left-0 right-0 z-50 bg-[#000000A6] text-white">
-      <div className="container mx-auto px-4 py-1">
+      <motion.div
+        className="container mx-auto px-4 py-1"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+      >
         <Toolbar>
-          {/* Left side branding */}
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -59,42 +66,10 @@ const Header = () => {
           >
             Umrah Support
           </Typography>
-          {/* Right side navigation */}
-          <Box sx={{ flexGrow: 1 }} />{" "}
-          {/* This will push the nav items to the right */}
-          <Box
-            sx={{
-              display: { xs: "none", md: "flex" },
-              justifyContent: "flex-end",
-              flexGrow: 1,
-            }}
-          >
-            {navItems.map((page) => (
-              <Button
-                key={page.path}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                <Link href={page.path}>{page.name}</Link>
-              </Button>
-            ))}
-            <Button>
-              <Link
-                href="tel:+358449869280"
-                className="bg-blue-600 hover:bg-red-800 text-white text-lg px-5 py-2 rounded-full transition ml-5 flex gap-2 items-center"
-              >
-                <WhatsAppIcon />
-              </Link>
-            </Button>
-          </Box>
-          {/* Mobile version */}
-          <Box
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
-            className="flex items-center justify-between"
-          >
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
-              aria-label="menu"
+              aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -107,54 +82,83 @@ const Header = () => {
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: "bottom",
-                horizontal: "right",
+                horizontal: "left",
               }}
               keepMounted
               transformOrigin={{
                 vertical: "top",
-                horizontal: "right",
+                horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
+              sx={{ display: { xs: "block", md: "none" } }}
             >
               {navItems.map((page) => (
-                <MenuItem key={page.path} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: "center" }}>
-                    <Link href={page.path}>{page.name}</Link>
-                  </Typography>
-                </MenuItem>
+                <Button
+                  key={page.path}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, display: "block" }}
+                >
+                  <Link href={page.path}>{page.name}</Link>
+                </Button>
               ))}
             </Menu>
-            {/* Mobile Typography */}
-            <Typography
-              variant="h5"
-              noWrap
-              component="a"
-              href="/"
-              sx={{
-                mr: 2,
-                display: { xs: "flex", md: "none" },
-                flexGrow: 1,
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
-              }}
-            >
-              Umrah Support
-            </Typography>
-            <Button>
+          </Box>
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href="#app-bar-with-responsive-menu"
+            sx={{
+              mr: 2,
+              display: { xs: "flex", md: "none" },
+              flexGrow: 1,
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          >
+            Umrah Support
+          </Typography>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "flex-end",
+            }}
+          >
+            {navItems.map((page) => (
+              <Button
+                key={page.path}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <Link href={page.path}>{page.name}</Link>
+              </Button>
+            ))}
+          </Box>
+          <Box sx={{ flexGrow: 0 }}>
+            <Button className="hidden md:flex">
               <Link
                 href="tel:+358449869280"
-                className="text-white hover:text-red-600 text-lg px-6 py-2 rounded-full transition"
+                className="bg-blue-600 hover:bg-red-800 text-white py-2 font-bold rounded-full transition ml-5 w-32 justify-center"
+              >
+                Book Now
+              </Link>
+            </Button>
+            <Button className="flex md:hidden">
+              <Link
+                href="tel:+358449869280"
+                className="bg-blue-600 hover:bg-red-800 text-white text-lg px-5 py-2 rounded-full transition"
               >
                 <WhatsAppIcon />
               </Link>
             </Button>
           </Box>
         </Toolbar>
-      </div>
+      </motion.div>
     </header>
   );
 };
