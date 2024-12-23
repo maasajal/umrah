@@ -18,7 +18,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="static md:relative mx-10 py-5 md:py-10 md:mb-80">
+    <div className="static md:relative mx-5 sm:mx-10 md:mx-20 py-5 md:py-10 md:mb-80">
       <motion.div
         className="md:absolute mx-auto -bottom-64 left-0 right-0 p-6 bg-white max-w-xl sm:max-w-3xl md:max-w-5xl rounded-xl shadow-lg text-center"
         initial="hidden"

@@ -19,7 +19,7 @@ const KaabaVideo = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         {/* Content Overlay */}
         <div className="absolute top-0 left-0 w-full h-96 bg-black bg-opacity-50 flex items-center justify-center text-center text-white">
-          <div className="space-y-5">
+          <div className="space-y-5 px-3 sm:px-1">
             <motion.h1
               className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-wider uppercase"
               initial={{ opacity: 0, y: -50 }}
