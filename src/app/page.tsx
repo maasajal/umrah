@@ -1,5 +1,7 @@
 "use client";
 import Banner from "@/pages/home/Banner";
+import HotelInMakkah from "@/pages/home/HotelInMakkah";
+import HotelInMedina from "@/pages/home/HotelInMedina";
 import KaabaVideo from "@/pages/home/KaabaVideo";
 import OurOffer from "@/pages/home/OurOffer";
 import SpiritualJourney from "@/pages/home/SpiritualJourney";
@@ -13,6 +15,8 @@ export default function Home() {
       <OurOffer />
       <WhatToDo />
       <SpiritualJourney />
+      <HotelInMakkah />
+      <HotelInMedina />
     </main>
   );
 }
