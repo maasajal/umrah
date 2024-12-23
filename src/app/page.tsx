@@ -2,6 +2,7 @@
 import Banner from "@/pages/home/Banner";
 import KaabaVideo from "@/pages/home/KaabaVideo";
 import OurOffer from "@/pages/home/OurOffer";
+import SpiritualJourney from "@/pages/home/SpiritualJourney";
 import WhatToDo from "@/pages/home/WhatToDo";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <Banner />
       <OurOffer />
       <WhatToDo />
+      <SpiritualJourney />
     </main>
   );
 }
