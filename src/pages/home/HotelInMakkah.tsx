@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const HotelInMakkah = () => {
   return (
@@ -21,10 +22,12 @@ const HotelInMakkah = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            <img
+            <Image
               src="https://via.placeholder.com/600x400"
               alt="Luxury Hotel in Makkah"
               className="w-full h-full object-cover"
+              width={500}
+              height={500}
             />
           </motion.div>
 

@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const HotelInMedina = () => {
   return (
@@ -37,7 +38,9 @@ const HotelInMedina = () => {
               <li>Free Wi-Fi and family-friendly facilities</li>
             </ul>
             <div className="flex items-center justify-between">
-              <p className="text-xl font-bold text-green-600">From €180/night</p>
+              <p className="text-xl font-bold text-green-600">
+                From €180/night
+              </p>
               <a
                 href="#"
                 className="bg-green-600 hover:bg-green-800 text-white text-lg font-bold py-3 px-6 rounded-full shadow-md transition"
@@ -54,10 +57,12 @@ const HotelInMedina = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            <img
+            <Image
               src="https://via.placeholder.com/600x400"
               alt="Luxury Hotel in Medina"
               className="w-full h-full object-cover"
+              width={500}
+              height={500}
             />
           </motion.div>
         </div>
