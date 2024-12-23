@@ -26,7 +26,7 @@ const HotelInMedina = () => {
               Pullman Zamzam Medina
             </h3>
             <p className="text-gray-600 mb-4">
-              Situated just a few steps away from the Prophet's Mosque, this
+              Situated just a few steps away from the Prophet`'`s Mosque, this
               luxurious hotel offers a serene stay in the heart of Medina. Ideal
               for pilgrims, it provides exceptional service and modern
               amenities.
