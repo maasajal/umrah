@@ -140,7 +140,11 @@ const Header = () => {
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
-            <Button className="hidden md:flex">
+            <Button
+              sx={{
+                display: { xs: "none", md: "flex" },
+              }}
+            >
               <Link
                 href="tel:+358449869280"
                 className="bg-blue-600 hover:bg-red-800 text-white py-2 font-bold rounded-full transition ml-5 w-32 justify-center"
@@ -148,7 +152,11 @@ const Header = () => {
                 Book Now
               </Link>
             </Button>
-            <Button className="flex md:hidden">
+            <Button
+              sx={{
+                display: { xs: "flex", md: "none" },
+              }}
+            >
               <Link
                 href="tel:+358449869280"
                 className="bg-blue-600 hover:bg-red-800 text-white text-lg px-5 py-2 rounded-full transition"
