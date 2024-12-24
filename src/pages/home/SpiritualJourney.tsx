@@ -1,31 +1,26 @@
 "use client";
+import SectionTitle from "@/components/SectionTitle";
 import { motion } from "framer-motion";
 
 const SpiritualJourney = () => {
   return (
     <div className="bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 py-16">
-      <div className="container mx-auto px-6 text-center">
-        <motion.h2
-          className="text-4xl md:text-5xl font-bold text-blue-900 mb-6"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          Join Us for a Spiritual Journey
-        </motion.h2>
+      <div className="container mx-auto px-6">
+        <SectionTitle
+          heading="Join Us for a Spiritual Journey"
+          description=""
+        />
         <motion.p
-          className="text-2xl font-semibold text-blue-700 mb-4"
+          className="text-2xl font-semibold text-blue-700 mb-4 text-end"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
           Umrah in Saudi Arabia <br />
-          <span className="text-blue-900 font-bold">
-            in ANY MONTH in 2025!
-          </span>
+          <span className="text-blue-900 font-bold">in ANY MONTH in 2025!</span>
         </motion.p>
         <motion.div
-          className="bg-white p-6 rounded-lg shadow-md mx-auto max-w-2xl"
+          className="bg-white p-6 rounded-lg shadow-md mx-auto max-w-2xl text-center"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1, duration: 1 }}
@@ -41,7 +36,7 @@ const SpiritualJourney = () => {
           </p>
         </motion.div>
         <motion.div
-          className="mt-8"
+          className="mt-8 text-center"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 1 }}

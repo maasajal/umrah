@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import SectionTitle from "@/components/SectionTitle";
 
 const OurOffer = () => {
   const offers = [
@@ -29,14 +30,7 @@ const OurOffer = () => {
   return (
     <div className="bg-gray-100 py-16">
       <div className="container mx-auto px-5">
-        <motion.h2
-          className="text-4xl font-bold text-center mb-12"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          What We Offer
-        </motion.h2>
+        <SectionTitle heading="What We Offer" description="" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {offers.map((offer) => (
             <motion.div

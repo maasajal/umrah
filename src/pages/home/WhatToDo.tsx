@@ -1,4 +1,5 @@
 "use client";
+import SectionTitle from "@/components/SectionTitle";
 import { motion } from "framer-motion";
 
 const WhatToDo = () => {
@@ -41,14 +42,10 @@ const WhatToDo = () => {
   return (
     <div className="bg-blue-50 py-16">
       <div className="container mx-auto px-5">
-        <motion.h2
-          className="text-4xl font-bold text-center mb-12 text-blue-900"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          What Should You Do
-        </motion.h2>
+        <SectionTitle
+          heading="What Should You Do"
+          description=""
+        />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {steps.map((step) => (
             <motion.div
