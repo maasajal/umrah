@@ -30,7 +30,11 @@ const OurOffer = () => {
   return (
     <div className="bg-gray-100 py-16">
       <div className="container mx-auto px-5">
-        <SectionTitle heading="What We Offer" description="" />
+        <SectionTitle
+          section="Offer"
+          heading="What We Offer"
+          description="At Umrah with Comfort & Resonable Price"
+        />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {offers.map((offer) => (
             <motion.div
@@ -42,7 +46,7 @@ const OurOffer = () => {
               transition={{ duration: 0.6, delay: offer.id * 0.2 }}
             >
               <div className="text-5xl mb-4">{offer.icon}</div>
-              <h3 className="text-2xl font-semibold mb-2">{offer.title}</h3>
+              <h4 className="mb-2">{offer.title}</h4>
               <p className="text-gray-600">{offer.description}</p>
             </motion.div>
           ))}

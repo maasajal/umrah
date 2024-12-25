@@ -1,4 +1,5 @@
 "use client";
+import SectionTitle from "@/components/SectionTitle";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -6,14 +7,11 @@ const HotelInMedina = () => {
   return (
     <div className="bg-gray-100 py-16">
       <div className="container mx-auto px-6">
-        <motion.h2
-          className="text-4xl md:text-5xl font-bold text-end text-gray-800 mb-10"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          Hotel in Medina
-        </motion.h2>
+        <SectionTitle
+          section="Hotels"
+          heading="Hotel in Medina for example"
+          description="Stay close to Masjid al-Nabawi with exceptional comfort"
+        />
         <div className="grid md:grid-cols-2 gap-10">
           {/* Hotel Details */}
           <motion.div

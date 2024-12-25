@@ -7,18 +7,10 @@ const SpiritualJourney = () => {
     <div className="bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 py-16">
       <div className="container mx-auto px-6">
         <SectionTitle
+          section="Journey"
           heading="Join Us for a Spiritual Journey"
-          description=""
+          description="Umrah in Saudi Arabia in ANY MONTH in 2025!"
         />
-        <motion.p
-          className="text-2xl font-semibold text-blue-700 mb-4 text-end"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 1 }}
-        >
-          Umrah in Saudi Arabia <br />
-          <span className="text-blue-900 font-bold">in ANY MONTH in 2025!</span>
-        </motion.p>
         <motion.div
           className="bg-white p-6 rounded-lg shadow-md mx-auto max-w-2xl text-center"
           initial={{ opacity: 0, scale: 0.9 }}

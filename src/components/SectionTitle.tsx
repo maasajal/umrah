@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
 
 interface SectionTitleProps {
+  section: string;
   heading: string;
   description: string;
 }
 
 const SectionTitle: React.FC<SectionTitleProps> = ({
+  section,
   heading,
   description,
 }) => {
@@ -17,15 +19,23 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
         animate={{ x: "0%", opacity: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
+        <motion.h3
+          className="font-bold uppercase"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          🐪🐪🐪 {section} 🐪🐪🐪
+        </motion.h3>
         <motion.h2
-          className="text-4xl md:text-5xl font-bold text-blue-900"
+          className="text-blue-900"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
           {heading}
         </motion.h2>
-        <p className="text-lg md:text-xl lg:text-2xl text-gray-600 font-light arabic-description">
+        <p className="text-lg md:text-xl lg:text-2xl text-gray-600 font-light arabic-description ">
           {description}
         </p>
       </motion.div>

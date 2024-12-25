@@ -43,8 +43,9 @@ const WhatToDo = () => {
     <div className="bg-blue-50 py-16">
       <div className="container mx-auto px-5">
         <SectionTitle
+          section="Steps"
           heading="What Should You Do"
-          description=""
+          description="Follow these steps for a seamless and spiritual Umrah journey"
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {steps.map((step) => (
@@ -57,9 +58,9 @@ const WhatToDo = () => {
               transition={{ duration: 0.6, delay: step.id * 0.2 }}
             >
               <div className="text-5xl mb-4">{step.icon}</div>
-              <h3 className="text-2xl font-semibold text-blue-800 mb-2">
+              <h4 className="text-blue-800 mb-2">
                 {step.title}
-              </h3>
+              </h4>
               <p className="text-gray-600">{step.description}</p>
             </motion.div>
           ))}

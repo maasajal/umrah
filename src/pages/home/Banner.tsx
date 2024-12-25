@@ -28,7 +28,7 @@ const Banner = () => {
         <motion.div className="space-y-4">
           {/* Title with motion */}
           <motion.h2
-            className="tracking-wider text-xl md:text-2xl font-bold"
+            className="tracking-wider"
             variants={itemVariants}
           >
             EID & Umrah in Makkah
