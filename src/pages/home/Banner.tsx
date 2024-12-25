@@ -31,7 +31,7 @@ const Banner = () => {
             className="tracking-wider text-xl md:text-2xl font-bold"
             variants={itemVariants}
           >
-            EID & Umrah in Mekka
+            EID & Umrah in Makkah
           </motion.h2>
 
           {/* Price with motion */}

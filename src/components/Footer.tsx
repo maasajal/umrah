@@ -7,7 +7,7 @@ import {
   FaMapMarkerAlt,
   FaFacebook,
   FaTwitter,
-  FaInstagram,
+  FaLinkedin,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -75,7 +75,13 @@ const Footer = () => {
               <li className="flex items-center gap-2">
                 <FaPhoneAlt className="text-green-500" />
                 <a href="tel:+358449869280" className="hover:text-green-500">
-                  +358 44 986 9280
+                  +358 44 986 9280 or
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaPhoneAlt className="text-green-500" />
+                <a href="tel:+358465896030" className="hover:text-green-500">
+                  +358 46 589 6030
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -102,21 +108,21 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between text-center">
           {/* Copyright */}
           <p className="text-sm">
-            Copyright © {new Date().getFullYear()} - All right reserved by
+            Copyright © {new Date().getFullYear()}{" "}
             <Link
               href="https://business-easy.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
-              BusinessEasy
-            </Link>
+              BusinessEasy.
+            </Link>{" "}
+            All right reserved.
           </p>
 
           {/* Social Links */}
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/Mdabdullah.allmamunhstu"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition"
@@ -124,7 +130,7 @@ const Footer = () => {
               <FaFacebook size={20} />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/MdAbdullahAllM1"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition"
@@ -132,12 +138,12 @@ const Footer = () => {
               <FaTwitter size={20} />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.linkedin.com/in/md-abdullah-all-mamun-435b1880"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition"
             >
-              <FaInstagram size={20} />
+              <FaLinkedin size={20} />
             </a>
           </div>
         </div>
