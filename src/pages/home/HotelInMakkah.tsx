@@ -11,6 +11,7 @@ const HotelInMakkah = () => {
           section="Hotels"
           heading="Hotel in Makkah for example"
           description="Experience luxury and comfort near the holy Kaaba"
+          customStyle=""
         />
         <div className="grid md:grid-cols-2 gap-10">
           {/* Hotel Image */}

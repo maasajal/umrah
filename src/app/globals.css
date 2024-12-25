@@ -46,5 +46,5 @@ h5 {
   font-family: "Amiri", serif; /* Elegant Arabic description font */
   letter-spacing: 0.1em;
   line-height: 1.8;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); */
 }

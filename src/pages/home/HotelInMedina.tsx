@@ -11,6 +11,7 @@ const HotelInMedina = () => {
           section="Hotels"
           heading="Hotel in Medina for example"
           description="Stay close to Masjid al-Nabawi with exceptional comfort"
+          customStyle=""
         />
         <div className="grid md:grid-cols-2 gap-10">
           {/* Hotel Details */}

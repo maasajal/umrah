@@ -28,12 +28,20 @@ const OurOffer = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-16">
-      <div className="container mx-auto px-5">
+    <div
+      className="relative bg-cover bg-fixed bg-center py-16"
+      style={{
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1693590614566-1d3ea9ef32f7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+      }}
+    >
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="container mx-auto px-5 relative z-10">
         <SectionTitle
           section="Offer"
           heading="What We Offer"
           description="At Umrah with Comfort & Resonable Price"
+          customStyle="text-white"
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {offers.map((offer) => (

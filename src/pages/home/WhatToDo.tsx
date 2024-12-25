@@ -46,6 +46,7 @@ const WhatToDo = () => {
           section="Steps"
           heading="What Should You Do"
           description="Follow these steps for a seamless and spiritual Umrah journey"
+          customStyle=""
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {steps.map((step) => (
@@ -58,9 +59,7 @@ const WhatToDo = () => {
               transition={{ duration: 0.6, delay: step.id * 0.2 }}
             >
               <div className="text-5xl mb-4">{step.icon}</div>
-              <h4 className="text-blue-800 mb-2">
-                {step.title}
-              </h4>
+              <h4 className="text-blue-800 mb-2">{step.title}</h4>
               <p className="text-gray-600">{step.description}</p>
             </motion.div>
           ))}

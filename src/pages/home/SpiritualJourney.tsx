@@ -10,6 +10,7 @@ const SpiritualJourney = () => {
           section="Journey"
           heading="Join Us for a Spiritual Journey"
           description="Umrah in Saudi Arabia in ANY MONTH in 2025!"
+          customStyle=""
         />
         <motion.div
           className="bg-white p-6 rounded-lg shadow-md mx-auto max-w-2xl text-center"
