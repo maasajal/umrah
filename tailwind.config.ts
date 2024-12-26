@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        arabic: ['"Scheherazade New"', "serif"],
+      },
     },
   },
   plugins: [],

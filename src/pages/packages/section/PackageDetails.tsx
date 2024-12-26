@@ -6,7 +6,7 @@ const PackageDetails = () => {
   const packageFeatures = [
     "Comprehensive Umrah Training & Workshops",
     "Round-Trip Flight Tickets",
-    "Luxurial Hotel Accommodation",
+    "Luxurious Hotel Accommodation",
     "Daily Meals: Breakfast, Lunch, and Dinner",
     "Guided Ziyarah to Sacred Sites",
     "Private Transportation for your entire journey",
