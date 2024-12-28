@@ -16,7 +16,7 @@ const Visa = () => {
     },
     {
       question: "How much does the visa cost?",
-      answer: "The visa fee is approximately €150.",
+      answer: "The visa fee is approximately €100.",
     },
   ];
   return (

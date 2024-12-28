@@ -23,10 +23,10 @@ const navItems = [
     name: "Packages",
     path: "packages",
   },
-  { name: "Events", path: "events" },
-  { name: "Flight", path: "flight" },
+  // { name: "Events", path: "events" },
+  // { name: "Flight", path: "flight" },
   { name: "Visa", path: "visa" },
-  { name: "Hotel", path: "hotel" },
+  // { name: "Hotel", path: "hotel" },
 ];
 
 const Header = () => {
