@@ -105,7 +105,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 my-6"></div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between text-center">
+        <div className="flex flex-col md:flex-row items-center justify-between text-center gap-5">
           {/* Copyright */}
           <p className="text-sm">
             Copyright © {new Date().getFullYear()}{" "}
@@ -146,6 +146,12 @@ const Footer = () => {
               <FaLinkedin size={20} />
             </a>
           </div>
+        </div>
+
+        <div className="text-center py-5 border-y border-blue-700 max-w-80 mx-auto my-5">
+          <Link href="https://maasajal-portfolio.vercel.app" target="_blank">
+            Website Made with 💙 by MaaSajal
+          </Link>
         </div>
       </div>
     </footer>

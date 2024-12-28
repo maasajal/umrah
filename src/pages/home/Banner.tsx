@@ -39,7 +39,7 @@ const Banner = () => {
             className="text-lg sm:text-xl md:text-2xl font-medium"
             variants={itemVariants}
           >
-            €600 - €800 (All Inclusive)
+            €850 - €1200 (All Inclusive)
           </motion.p>
 
           {/* Dates with motion */}

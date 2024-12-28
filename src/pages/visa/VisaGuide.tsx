@@ -25,7 +25,7 @@ const VisaGuide = () => {
     {
       title: "Validity and Fees",
       description:
-        "The visa is valid for 30 days, allowing ample time for Umrah. Fees are approximately €150.",
+        "The visa is valid for 1 year, allowing ample time for Umrah. Fees are approximately €60.",
       icon: "💳",
     },
     {
