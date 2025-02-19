@@ -12,7 +12,7 @@ Personalized Service
 Experienced Guides
 Flexible Packages
 
-Our Umrah Package Includes (All Inclusive 600-800€/person):
+Our Umrah Package Includes (All Inclusive 850-1200€/person):
 Comprehensive Umrah Training & Workshops
 Round-Trip Flight Tickets
 Luxurious Hotel Accommodations
